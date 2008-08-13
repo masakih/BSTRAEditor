@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>saveToBSSupportFolder</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>BSTRADocument</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>blueActiveView</key>
+				<string>BSCSTitleRulerImitation</string>
+				<key>graphiteActiveView</key>
+				<string>BSCSTitleRulerImitation</string>
+				<key>inactiveView</key>
+				<string>BSCSTitleRulerImitation</string>
+				<key>infoView</key>
+				<string>BSCSTitleRulerImitation</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSDocument</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>BSCSTitleRulerImitation</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSView</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F43441780D86C91B00F9416E /* MakeLocalize */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F434417E0D86C93200F9416E /* Build configuration list for PBXAggregateTarget "MakeLocalize" */;
+			buildPhases = (
+				F43441770D86C91B00F9416E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = MakeLocalize;
+			productName = MakeLocalize;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8D15AC2E0486D014006FF6A4 /* BSTRADocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* BSTRADocument.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC310486D014006FF6A4 /* BSTRADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* BSTRADocument.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		F479A5F10D860C6C00A414C2 /* NSBezierPath_AMShading.m in Sources */ = {isa = PBXBuildFile; fileRef = F479A5EF0D860C6C00A414C2 /* NSBezierPath_AMShading.m */; };
+		F479A5FD0D860D7C00A414C2 /* BSTitleRulerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = F479A5FC0D860D7C00A414C2 /* BSTitleRulerAppearance.m */; };
+		F479A6030D860DBB00A414C2 /* BSCSTitleRulerImitation.m in Sources */ = {isa = PBXBuildFile; fileRef = F479A6020D860DBB00A414C2 /* BSCSTitleRulerImitation.m */; };
+		F479A6080D860E0C00A414C2 /* NSWorkspace-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F479A6070D860E0C00A414C2 /* NSWorkspace-Extensions.m */; };
+		F479A7710D861A8300A414C2 /* NSAppleEventDescriptor-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F479A7700D861A8300A414C2 /* NSAppleEventDescriptor-Extensions.m */; };
+		F479A7A60D861C1900A414C2 /* BSTitleRulerAppearance.plist in Resources */ = {isa = PBXBuildFile; fileRef = F479A7A50D861C1900A414C2 /* BSTitleRulerAppearance.plist */; };
+		F479A8230D86302E00A414C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F479A8220D86302E00A414C2 /* Localizable.strings */; };
+		F479A91F0D8654E300A414C2 /* BSTRAEditor.icns in Resources */ = {isa = PBXBuildFile; fileRef = F479A91E0D8654E300A414C2 /* BSTRAEditor.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F434417F0D86C94100F9416E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F43441780D86C91B00F9416E;
+			remoteInfo = MakeLocalize;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		2A37F4ACFDCFA73011CA2CEA /* BSTRADocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTRADocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* BSTRADocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTRADocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/BSTRADocument.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* BSTRAEditor_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTRAEditor_Prefix.pch; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* BSTRAEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSTRAEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F434415B0D86B89D00F9416E /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = English; path = English.lproj/Makefile; sourceTree = "<group>"; };
+		F434415D0D86B8AC00F9416E /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = English; path = English.lproj/Localizable.strings.sed; sourceTree = "<group>"; };
+		F434415E0D86B8C900F9416E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		F43441610D86B96500F9416E /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = Japanese; path = Japanese.lproj/Makefile; sourceTree = "<group>"; };
+		F43441710D86C85900F9416E /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text; name = Japanese; path = Japanese.lproj/Localizable.strings.sed; sourceTree = "<group>"; };
+		F479A5EC0D860C4C00A414C2 /* BSTitleRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTitleRulerView.h; sourceTree = "<group>"; };
+		F479A5ED0D860C4C00A414C2 /* BSTitleRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTitleRulerView.m; sourceTree = "<group>"; };
+		F479A5EF0D860C6C00A414C2 /* NSBezierPath_AMShading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBezierPath_AMShading.m; sourceTree = "<group>"; };
+		F479A5F00D860C6C00A414C2 /* NSBezierPath_AMShading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBezierPath_AMShading.h; sourceTree = "<group>"; };
+		F479A5FB0D860D7C00A414C2 /* BSTitleRulerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTitleRulerAppearance.h; sourceTree = "<group>"; };
+		F479A5FC0D860D7C00A414C2 /* BSTitleRulerAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTitleRulerAppearance.m; sourceTree = "<group>"; };
+		F479A6010D860DBB00A414C2 /* BSCSTitleRulerImitation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCSTitleRulerImitation.h; sourceTree = "<group>"; };
+		F479A6020D860DBB00A414C2 /* BSCSTitleRulerImitation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCSTitleRulerImitation.m; sourceTree = "<group>"; };
+		F479A6060D860E0C00A414C2 /* NSWorkspace-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWorkspace-Extensions.h"; sourceTree = "<group>"; };
+		F479A6070D860E0C00A414C2 /* NSWorkspace-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWorkspace-Extensions.m"; sourceTree = "<group>"; };
+		F479A76F0D861A8300A414C2 /* NSAppleEventDescriptor-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor-Extensions.h"; sourceTree = "<group>"; };
+		F479A7700D861A8300A414C2 /* NSAppleEventDescriptor-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor-Extensions.m"; sourceTree = "<group>"; };
+		F479A7A50D861C1900A414C2 /* BSTitleRulerAppearance.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = BSTitleRulerAppearance.plist; sourceTree = "<group>"; };
+		F479A8160D862FA100A414C2 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F479A8240D86303600A414C2 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F479A91E0D8654E300A414C2 /* BSTRAEditor.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = BSTRAEditor.icns; sourceTree = "<group>"; };
+		F479A92C0D8655EE00A414C2 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Japanese; path = Japanese.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F479A94A0D865A9000A414C2 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F479A9520D8665B400A414C2 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/BSTRADocument.nib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* BSTRAEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* BSTRAEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F479A6090D860E1200A414C2 /* Extension */,
+				F479A5EB0D860B5200A414C2 /* External Classes */,
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = BSTRAEditor;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F479A6010D860DBB00A414C2 /* BSCSTitleRulerImitation.h */,
+				F479A6020D860DBB00A414C2 /* BSCSTitleRulerImitation.m */,
+				2A37F4AEFDCFA73011CA2CEA /* BSTRADocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* BSTRADocument.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* BSTRAEditor_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F434415E0D86B8C900F9416E /* Makefile */,
+				F434415C0D86B8AC00F9416E /* Localizable.strings.sed */,
+				F434415A0D86B89D00F9416E /* Makefile */,
+				F479A91E0D8654E300A414C2 /* BSTRAEditor.icns */,
+				F479A7A50D861C1900A414C2 /* BSTitleRulerAppearance.plist */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* BSTRADocument.nib */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				F479A8220D86302E00A414C2 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F479A5EB0D860B5200A414C2 /* External Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F479A5FB0D860D7C00A414C2 /* BSTitleRulerAppearance.h */,
+				F479A5FC0D860D7C00A414C2 /* BSTitleRulerAppearance.m */,
+				F479A5F00D860C6C00A414C2 /* NSBezierPath_AMShading.h */,
+				F479A5EF0D860C6C00A414C2 /* NSBezierPath_AMShading.m */,
+				F479A5EC0D860C4C00A414C2 /* BSTitleRulerView.h */,
+				F479A5ED0D860C4C00A414C2 /* BSTitleRulerView.m */,
+			);
+			name = "External Classes";
+			sourceTree = "<group>";
+		};
+		F479A6090D860E1200A414C2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F479A6060D860E0C00A414C2 /* NSWorkspace-Extensions.h */,
+				F479A6070D860E0C00A414C2 /* NSWorkspace-Extensions.m */,
+				F479A76F0D861A8300A414C2 /* NSAppleEventDescriptor-Extensions.h */,
+				F479A7700D861A8300A414C2 /* NSAppleEventDescriptor-Extensions.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* BSTRAEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "BSTRAEditor" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F43441800D86C94100F9416E /* PBXTargetDependency */,
+			);
+			name = BSTRAEditor;
+			productInstallPath = "$(HOME)/Applications";
+			productName = BSTRAEditor;
+			productReference = 8D15AC370486D014006FF6A4 /* BSTRAEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "BSTRAEditor" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				"",
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* BSTRAEditor */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* BSTRAEditor */,
+				F43441780D86C91B00F9416E /* MakeLocalize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
+				8D15AC2E0486D014006FF6A4 /* BSTRADocument.nib in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				F479A7A60D861C1900A414C2 /* BSTitleRulerAppearance.plist in Resources */,
+				F479A8230D86302E00A414C2 /* Localizable.strings in Resources */,
+				F479A91F0D8654E300A414C2 /* BSTRAEditor.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F43441770D86C91B00F9416E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\nmake Localizable";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC310486D014006FF6A4 /* BSTRADocument.m in Sources */,
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				F479A5F10D860C6C00A414C2 /* NSBezierPath_AMShading.m in Sources */,
+				F479A5FD0D860D7C00A414C2 /* BSTitleRulerAppearance.m in Sources */,
+				F479A6030D860DBB00A414C2 /* BSCSTitleRulerImitation.m in Sources */,
+				F479A6080D860E0C00A414C2 /* NSWorkspace-Extensions.m in Sources */,
+				F479A7710D861A8300A414C2 /* NSAppleEventDescriptor-Extensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F43441800D86C94100F9416E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F43441780D86C91B00F9416E /* MakeLocalize */;
+			targetProxy = F434417F0D86C94100F9416E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+				F479A92C0D8655EE00A414C2 /* Japanese */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* BSTRADocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+				F479A9520D8665B400A414C2 /* Japanese */,
+			);
+			name = BSTRADocument.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+				F479A94A0D865A9000A414C2 /* Japanese */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		F434415A0D86B89D00F9416E /* Makefile */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F434415B0D86B89D00F9416E /* English */,
+				F43441610D86B96500F9416E /* Japanese */,
+			);
+			name = Makefile;
+			sourceTree = "<group>";
+		};
+		F434415C0D86B8AC00F9416E /* Localizable.strings.sed */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F434415D0D86B8AC00F9416E /* English */,
+				F43441710D86C85900F9416E /* Japanese */,
+			);
+			name = Localizable.strings.sed;
+			sourceTree = "<group>";
+		};
+		F479A8220D86302E00A414C2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F479A8160D862FA100A414C2 /* English */,
+				F479A8240D86303600A414C2 /* Japanese */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C05733C808A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G4;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BSTRAEditor_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[arch=ppc]" = 10.3;
+				PRODUCT_NAME = BSTRAEditor;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C05733C908A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BSTRAEditor_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[arch=ppc]" = 10.3;
+				PRODUCT_NAME = BSTRAEditor;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C05733CC08A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				"SDKROOT[arch=ppc]" = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Debug;
+		};
+		C05733CD08A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				"SDKROOT[arch=ppc]" = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Release;
+		};
+		F43441790D86C91C00F9416E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = MakeLocalize;
+			};
+			name = Debug;
+		};
+		F434417A0D86C91C00F9416E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = MakeLocalize;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "BSTRAEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733C808A9546B00998B17 /* Debug */,
+				C05733C908A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "BSTRAEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733CC08A9546B00998B17 /* Debug */,
+				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F434417E0D86C93200F9416E /* Build configuration list for PBXAggregateTarget "MakeLocalize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43441790D86C91C00F9416E /* Debug */,
+				F434417A0D86C91C00F9416E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}
