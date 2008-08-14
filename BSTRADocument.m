@@ -292,10 +292,10 @@ final:
 	
 	p = paths;
 	while(*p) {
-	[appearance addObserver:self
-				 forKeyPath:*p++
-					options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
-					context:NULL];
+		[appearance addObserver:self
+					 forKeyPath:*p++
+						options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+						context:NULL];
 	}
 }
 - (BSTitleRulerAppearance *)appearance
@@ -343,7 +343,6 @@ final:
 	new = [change objectForKey:NSKeyValueChangeNewKey];
 	if([old isEqual:new]) return;
 	
-	[self updateChangeCount:NSChangeDone];
 	NSUndoManager *undo = [self undoManager];
 	SEL sel = [self selForKey:keyPath];
 	[undo beginUndoGrouping];
@@ -351,11 +350,9 @@ final:
 		[undo registerUndoWithTarget:appearance
 							selector:sel
 							  object:old];
-		[[undo prepareWithInvocationTarget:self] updateChangeCount:NSChangeUndone];
 	}
 	if([keyPath isEqual:@"drawsCarvedText"]) {
 		[[undo prepareWithInvocationTarget:appearance] setDrawsCarvedText:[old boolValue]];
-		[[undo prepareWithInvocationTarget:self] updateChangeCount:NSChangeUndone];
 	}
 	[undo registerUndoWithTarget:self
 						selector:@selector(displayItemForKey:)
