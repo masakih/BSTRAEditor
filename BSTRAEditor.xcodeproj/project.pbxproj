@@ -66,8 +66,6 @@
 		F434415E0D86B8C900F9416E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		F43441610D86B96500F9416E /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = Japanese; path = Japanese.lproj/Makefile; sourceTree = "<group>"; };
 		F43441710D86C85900F9416E /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text; name = Japanese; path = Japanese.lproj/Localizable.strings.sed; sourceTree = "<group>"; };
-		F479A5EC0D860C4C00A414C2 /* BSTitleRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTitleRulerView.h; sourceTree = "<group>"; };
-		F479A5ED0D860C4C00A414C2 /* BSTitleRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTitleRulerView.m; sourceTree = "<group>"; };
 		F479A5EF0D860C6C00A414C2 /* NSBezierPath_AMShading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBezierPath_AMShading.m; sourceTree = "<group>"; };
 		F479A5F00D860C6C00A414C2 /* NSBezierPath_AMShading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBezierPath_AMShading.h; sourceTree = "<group>"; };
 		F479A5FB0D860D7C00A414C2 /* BSTitleRulerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTitleRulerAppearance.h; sourceTree = "<group>"; };
@@ -192,8 +190,6 @@
 				F479A5FC0D860D7C00A414C2 /* BSTitleRulerAppearance.m */,
 				F479A5F00D860C6C00A414C2 /* NSBezierPath_AMShading.h */,
 				F479A5EF0D860C6C00A414C2 /* NSBezierPath_AMShading.m */,
-				F479A5EC0D860C4C00A414C2 /* BSTitleRulerView.h */,
-				F479A5ED0D860C4C00A414C2 /* BSTitleRulerView.m */,
 			);
 			name = "External Classes";
 			sourceTree = "<group>";
@@ -414,7 +410,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=ppc]" = /Developer/SDKs/MacOSX10.3.9.sdk;
+				"SDKROOT[arch=ppc]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
@@ -429,7 +425,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=ppc]" = /Developer/SDKs/MacOSX10.3.9.sdk;
+				"SDKROOT[arch=ppc]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Release;
 		};
