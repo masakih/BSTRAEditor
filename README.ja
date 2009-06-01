@@ -1,0 +1,9 @@
+BSTitleRulerAppearanceはBathyScaphe(http://sourceforge.jp/projects/bathyscaphe/)よりBSDライセンスに基づき使用しています。
+BSCSTitleRulerImitationはBathyScaphe(http://sourceforge.jp/projects/bathyscaphe/)よりBSDライセンスに基づきBSTitleRulerViewを改変することで作成しています。
+
+NSBezierPath_AMShadingは以前http://www.harmless.de/cocoa.phpで提供されていたソースコードをそのまま使用しています。
+
+
+上記以外のものについてはどのように扱っていただいてもかまいません。
+
+堀　昌樹
