@@ -12,6 +12,7 @@
 - (void)setAppearance:(BSTitleRulerAppearance *)newAppearance;
 - (BSTitleRulerAppearance *)appearance;
 - (NSString *)bathyScapheSupportFolder;
+- (void)displayItemForKey:(NSString *)key;
 @end
 
 @implementation BSTRADocument
@@ -358,6 +359,8 @@ final:
 						selector:@selector(displayItemForKey:)
 						  object:keyPath];
 	[undo endUndoGrouping];
+	
+	[self displayItemForKey:keyPath];
 }
 - (void)displayItemForKey:(NSString *)key
 {
@@ -376,12 +379,5 @@ final:
 		[infoView setNeedsDisplay:YES];
 	}
 }
-- (void)setValue:(id)value forKeyPath:(NSString *)keyPath
-{
-	if([keyPath hasPrefix:@"appearance."]) {
-		[self displayItemForKey:[keyPath substringFromIndex:[@"appearance." length]]];
-	}
-	
-	[super setValue:value forKeyPath:keyPath];
-}
+
 @end
