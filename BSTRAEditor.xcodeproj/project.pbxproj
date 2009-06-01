@@ -35,6 +35,8 @@
 		F479A7A60D861C1900A414C2 /* BSTitleRulerAppearance.plist in Resources */ = {isa = PBXBuildFile; fileRef = F479A7A50D861C1900A414C2 /* BSTitleRulerAppearance.plist */; };
 		F479A8230D86302E00A414C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F479A8220D86302E00A414C2 /* Localizable.strings */; };
 		F479A91F0D8654E300A414C2 /* BSTRAEditor.icns in Resources */ = {isa = PBXBuildFile; fileRef = F479A91E0D8654E300A414C2 /* BSTRAEditor.icns */; };
+		F4D648500FD41E9C000A2870 /* LICENSEOfBathyScaphe in Resources */ = {isa = PBXBuildFile; fileRef = F4D6484F0FD41E9C000A2870 /* LICENSEOfBathyScaphe */; };
+		F4D648570FD42064000A2870 /* README.ja in Resources */ = {isa = PBXBuildFile; fileRef = F4D648560FD42064000A2870 /* README.ja */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		F479A92C0D8655EE00A414C2 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Japanese; path = Japanese.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F479A94A0D865A9000A414C2 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		F479A9520D8665B400A414C2 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/BSTRADocument.nib; sourceTree = "<group>"; };
+		F4D6484F0FD41E9C000A2870 /* LICENSEOfBathyScaphe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSEOfBathyScaphe; sourceTree = "<group>"; };
+		F4D648560FD42064000A2870 /* README.ja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.ja; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* BSTRAEditor */ = {
 			isa = PBXGroup;
 			children = (
+				F4D6484B0FD41E78000A2870 /* Documents */,
 				F479A6090D860E1200A414C2 /* Extension */,
 				F479A5EB0D860B5200A414C2 /* External Classes */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
@@ -205,6 +210,15 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
+		F4D6484B0FD41E78000A2870 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				F4D648560FD42064000A2870 /* README.ja */,
+				F4D6484F0FD41E9C000A2870 /* LICENSEOfBathyScaphe */,
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +277,8 @@
 				F479A7A60D861C1900A414C2 /* BSTitleRulerAppearance.plist in Resources */,
 				F479A8230D86302E00A414C2 /* Localizable.strings in Resources */,
 				F479A91F0D8654E300A414C2 /* BSTRAEditor.icns in Resources */,
+				F4D648500FD41E9C000A2870 /* LICENSEOfBathyScaphe in Resources */,
+				F4D648570FD42064000A2870 /* README.ja in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
