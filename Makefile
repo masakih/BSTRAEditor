@@ -1,4 +1,4 @@
-
+// encoding=utf-8
 PRODUCT_NAME=BSTREditor
 PRODUCT_EXTENSION=app
 BUILD_PATH=./build
@@ -7,10 +7,6 @@ APP_BUNDLE=$(PRODUCT_NAME).$(PRODUCT_EXTENSION)
 APP=$(BUILD_PATH)/$(DEPLOYMENT)/$(APP_BUNDLE)
 APP_NAME=$(BUILD_PATH)/$(DEPLOYMENT)/$(PRODUCT_NAME)
 INFO_PLIST=Info.plist
-
-URL_BSTREditor = svn+ssh://macmini/usr/local/svnrepos/BSTREditor
-HEAD = $(URL_BSTREditor)/BSTREditor
-TAGS_DIR = $(URL_BSTREditor)/tags
 
 VER_CMD=grep -A1 'CFBundleShortVersionString' $(INFO_PLIST) | tail -1 | tr -d "'\t</string>" 
 VERSION=$(shell $(VER_CMD))
@@ -21,8 +17,7 @@ all:
 
 tagging:
 	@echo "Tagging the $(VERSION) (x) release of BSTREditor project."
-	export LC_ALL=C;	\
-	REV=`svn info | awk '/Last Changed Rev/ {print $$4}'` ;	\
+	@echo ""
 	echo svn copy $(HEAD) $(TAGS_DIR)/release-$(VERSION).$${REV}
 
 Localizable: BSTRADocument.m
@@ -40,20 +35,16 @@ release: updateRevision
 	$(MAKE) restorInfoPlist
 
 package: release
-	export LC_ALL=C;	\
-	REV=`svn info | awk '/Last Changed Rev/ {print $$4}'`;	\
+	REV=`git show | head -1 | awk '{printf("%.7s\n", $$2)}'`;	\
 	ditto -ck -rsrc --keepParent $(APP) $(APP_NAME)-$(VERSION)-$${REV}.zip
 
-updateRevision: update_svn
+updateRevision:
 	if [ ! -f $(INFO_PLIST).bak ] ; then cp $(INFO_PLIST) $(INFO_PLIST).bak ; fi ;	\
-	export LC_ALL=C;	\
-	REV=`svn info | awk '/Last Changed Rev/ {print $$4}'` ;	\
+	REV=`git show | head -1 | awk '{printf("%.7s\n", $$2)}'`;	\
 	sed -e "s/%%%%REVISION%%%%/$${REV}/" $(INFO_PLIST) > $(INFO_PLIST).r ;	\
 	mv -f $(INFO_PLIST).r $(INFO_PLIST) ;	\
 
 restorInfoPlist:
 	if [ -f $(INFO_PLIST).bak ] ; then cp -f $(INFO_PLIST).bak $(INFO_PLIST) ; fi
 
-update_svn:
-	svn up
 
