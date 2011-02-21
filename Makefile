@@ -1,5 +1,5 @@
 // encoding=utf-8
-PRODUCT_NAME=BSTREditor
+PRODUCT_NAME=BSTRAEditor
 PRODUCT_EXTENSION=app
 BUILD_PATH=./build
 DEPLOYMENT=Release
@@ -40,11 +40,11 @@ package: release
 
 updateRevision:
 	if [ ! -f $(INFO_PLIST).bak ] ; then cp $(INFO_PLIST) $(INFO_PLIST).bak ; fi ;	\
-	REV=`git show | head -1 | awk '{printf("%.7s\n", $$2)}'`;	\
+	REV=`git show | head -1 | awk '{printf("%.7s\n", $$2)}'` ;	\
 	sed -e "s/%%%%REVISION%%%%/$${REV}/" $(INFO_PLIST) > $(INFO_PLIST).r ;	\
 	mv -f $(INFO_PLIST).r $(INFO_PLIST) ;	\
 
 restorInfoPlist:
-	if [ -f $(INFO_PLIST).bak ] ; then cp -f $(INFO_PLIST).bak $(INFO_PLIST) ; fi
+	if [ -f $(INFO_PLIST).bak ] ; then mv -f $(INFO_PLIST).bak $(INFO_PLIST) ; fi
 
 
