@@ -9,7 +9,9 @@
 
 @interface NSAppleEventDescriptor(HMCocoaExtention)
 
+#ifndef __LP64__
 + (id)descriptorWithFloat:(float)aFloat;
+#endif
 
 + (id)targetDescriptorWithApplicationIdentifier:(NSString *)identifier;
 + (id)targetDescriptorWithAppName:(NSString *)appName;

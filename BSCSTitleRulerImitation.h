@@ -28,7 +28,7 @@ typedef enum _BSTitleRulerModeType {
 	
 	// addtional variables.
 	NSControlTint representControlTint;
-	int representActiveState; // 0: Inactive. 1: Active.
+	NSInteger representActiveState; // 0: Inactive. 1: Active.
 }
 
 - (BSTitleRulerAppearance *)appearance;
@@ -50,7 +50,7 @@ typedef enum _BSTitleRulerModeType {
 - (void)setRepresentControlTint:(NSControlTint)newTint;
 
 // 0: Inactive. 1: Active.
-- (int)representActiveState;
-- (void)setRepresentActiveState:(int)newState;
+- (NSInteger)representActiveState;
+- (void)setRepresentActiveState:(NSInteger)newState;
 
 @end
