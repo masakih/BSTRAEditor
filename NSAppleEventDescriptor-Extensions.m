@@ -13,12 +13,14 @@ static NSString *HMAEDesNotAEExceptionResonFormat = @"Should be call to instance
 
 @implementation NSAppleEventDescriptor(HMCocoaExtention)
 
+#ifndef __LP64__
 + (id)descriptorWithFloat:(float)aFloat
 {
 	return [NSAppleEventDescriptor descriptorWithDescriptorType:typeShortFloat
 														  bytes:&aFloat
 														 length:sizeof(aFloat)];
 }
+#endif
 
 + (id)targetDescriptorWithApplicationIdentifier:(NSString *)identifier
 {

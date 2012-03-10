@@ -153,7 +153,7 @@
 							  alternateButton:NSLocalizedString(@"Replace", @"Replace")
 								  otherButton:nil
 					informativeTextWithFormat:information];
-		int ret = [alert runModal];
+		NSInteger ret = [alert runModal];
 		if(ret == NSAlertDefaultReturn) {
 			return;
 		}

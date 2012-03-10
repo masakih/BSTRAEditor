@@ -78,7 +78,7 @@
 
 - (void)setCurrentMode:(BSTitleRulerModeType)newType
 {
-	float newThickness;
+	CGFloat newThickness;
 	_currentMode = newType;
 	
 	switch(newType) {
@@ -110,11 +110,11 @@
 }
 
 // 0: Inactive. 1: Active.
-- (int)representActiveState
+- (NSInteger)representActiveState
 {
 	return representActiveState;
 }
-- (void)setRepresentActiveState:(int)newState
+- (void)setRepresentActiveState:(NSInteger)newState
 {
 	representActiveState = newState;
 	// [self setNeedsDisplay:YES];
